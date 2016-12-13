@@ -1,0 +1,15 @@
+// Projects Gallery
+
+.projects-gallery-section {
+  padding: 30px;
+}
+
+.project-gallery-item {
+  height: 285px;
+  border: 1px solid #3578EF;
+  margin-bottom: 30px;
+}
+
+.project-gallery-item.featured-item {
+  height: 600px;
+}
