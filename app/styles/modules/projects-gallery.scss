@@ -1,15 +1,56 @@
 // Projects Gallery
 
 .projects-gallery-section {
+  margin-top: 30px;
   padding: 30px;
 }
 
 .project-gallery-item {
-  height: 285px;
-  border: 1px solid #3578EF;
+  //height: 285px;
+  border: 1px solid $main-color;
   margin-bottom: 30px;
+
+  .thumbnail {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    img {
+      transform: scale(1);
+      transition: all 700ms ease;
+    }
+
+    .caption {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 400ms ease;
+    }
+
+    &:hover {
+
+      .caption {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      img {
+        transform: scale(1.5);
+      }
+    }
+  }
 }
 
 .project-gallery-item.featured-item {
-  height: 600px;
+
+}
+
+.projects-gallery-nav {
+  padding: 30px 0 15px 15px;
 }
