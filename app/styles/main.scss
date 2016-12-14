@@ -19,6 +19,11 @@ $icon-font-path: '../fonts/';
 body {
   margin: 0;
   padding: 0;
+  background: #fff;
+}
+
+.site {
+  background: #fff;
 }
 
 .thumbnail {
@@ -38,11 +43,11 @@ body {
   opacity: 0;
   background: $main-color;
   transform: translateX(100%);
-  transition: transform 300ms ease-in;
+  transition: transform 500ms ease-in;
   z-index: 10;
 
   .overlay-layer-1 {
-    content: '';
+/*    content: '';
     position: fixed;
     width: 100%;
     height: 100%;
@@ -53,7 +58,7 @@ body {
     transform: translateX(-300%) translateY(-50%) skew(45deg) scale(2);
     background: #fff;
     transition: transform 500ms ease-in;
-    transition-delay: 300ms;
+    transition-delay: 300ms;*/
   }
 
   &.visible {
@@ -62,10 +67,10 @@ body {
     transform: translateX(0);
 
     .overlay-layer-1 {
-      visibility: visible;
+/*      visibility: visible;
       opacity: 1;
       transform: translateX(300%) translateY(-50%) skew(45deg) scale(2);
-      background: #fff;
+      background: #fff;*/
     }
   }
 }

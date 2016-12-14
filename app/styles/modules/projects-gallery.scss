@@ -3,6 +3,12 @@
 .projects-gallery-section {
   margin-top: 30px;
   padding: 30px;
+
+  &.scaled-down {
+    transition: all 500ms ease;
+    transform: scale(0.5) translateX(-50%);
+  }
+
 }
 
 .project-gallery-item {
