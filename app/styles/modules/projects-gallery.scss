@@ -9,6 +9,7 @@
   //height: 285px;
   border: 1px solid $main-color;
   margin-bottom: 30px;
+  transform: scale(1);
 
   .thumbnail {
     position: relative;
@@ -44,6 +45,10 @@
         transform: scale(1.5);
       }
     }
+  }
+
+  &.scaled-up {
+
   }
 }
 
